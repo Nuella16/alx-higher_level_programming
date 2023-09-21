@@ -13,13 +13,7 @@ def best_score(a_dictionary):
     if not a_dictionary:  # Check if the dictionary is empty
         return None
 
-    score = float("-inf")  # Initialize score with negative infinity
-    leader = None  # Initialize leader as None
-
-    for key, value in a_dictionary.items():
-        if isinstance(value, int) and value > score:
-            score = value
-            leader = key
-
+    # Use the max function with a lambda function as the key to find the key with the maximum value
+    leader = max(a_dictionary, key=lambda k: a_dictionary[k])
     return leader
 
