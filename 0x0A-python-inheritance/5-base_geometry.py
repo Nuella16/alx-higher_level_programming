@@ -1,6 +1,12 @@
 #!/usr/bin/python3
-"""an empty class"""
+"""
+This is a module container of the function 5-base_geometry.py
+"""
+
 
 class BaseGeometry:
-    """empty class"""
+    """
+    Base Geometry class
+    (an empty class)
+    """
     pass
